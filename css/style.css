@@ -1,0 +1,77 @@
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+};
+h1,h2,h3,p,figure,ol,ul{
+    margin: 0;
+    padding: 0;
+}
+h1,h2,h3{
+    font-weight: normal;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* theme */
+:root{
+    --main-color: #d1d1d2;
+    --bg-header-primary: #ffffff;
+    --bg-header-secondary: #3d3838; 
+}
+header, main, footer{
+    max-width: 80rem;
+    border: solid .1rem var(--bg-header-secondary);
+    margin: 0 auto;
+    background-color: var(--main-color);
+}
+header{
+    padding: 1rem;
+    background-color: var(--main-color);
+}
+main{
+    padding: 1rem;
+}
+main nav ol{
+    padding-left: 2.5rem;
+    line-height: 3rem;
+}
+main nav ol, li a{
+    text-transform: capitalize;
+}
+main nav ol, nav h2, section p{
+    padding: 2.5rem;
+}
+main nav h2, section h2{
+    background-color: var(--bg-header-primary);
+    box-shadow: 0 .4rem 0 var(--bg-header-secondary);
+    text-transform: capitalize;
+    color: #fafafa;
+    text-shadow: .2rem .2rem 0 black;
+    font-size: x-large;
+}
+section div img{
+    display: block;
+    width: 100%;
+}
+main section p, footer p{
+    line-height: 2.6rem;
+}
+footer{
+    margin-top: 3.0rem;
+}
+footer p{
+    text-align: center;
+    text-transform: capitalize;
+}
+#image{
+    width: 15rem;
+    float: right;
+}
