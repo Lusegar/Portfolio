@@ -13,65 +13,99 @@ h1,h2,h3,p,figure,ol,ul{
     margin: 0;
     padding: 0;
 }
-h1,h2,h3{
+h1,h2{
     font-weight: normal;
+}
+section{
+  margin-left: 8%;
+  margin-right: 8%;
 }
 a{
     text-decoration: none;
     color: black;
 }
 /* theme */
+
 :root{
-    --main-color: #d1d1d2;
-    --bg-header-primary: #ffffff;
-    --bg-header-secondary: #3d3838; 
-}
-header, main, footer{
-    max-width: 80rem;
-    border: solid .1rem var(--bg-header-secondary);
-    margin: 0 auto;
-    background-color: var(--main-color);
-}
-header{
-    padding: 1rem;
-    background-color: var(--main-color);
-}
-main{
-    padding: 1rem;
-}
-main nav ol{
-    padding-left: 2.5rem;
-    line-height: 3rem;
-}
-main nav ol, li a{
-    text-transform: capitalize;
-}
-main nav ol, nav h2, section p{
-    padding: 2.5rem;
-}
-main nav h2, section h2{
-    background-color: var(--bg-header-primary);
-    box-shadow: 0 .4rem 0 var(--bg-header-secondary);
-    text-transform: capitalize;
-    color: #fafafa;
-    text-shadow: .2rem .2rem 0 black;
-    font-size: x-large;
-}
-section div img{
-    display: block;
-    width: 100%;
-}
-main section p, footer p{
-    line-height: 2.6rem;
-}
-footer{
-    margin-top: 3.0rem;
-}
-footer p{
+    --primary--color:rgb(18, 58, 145);
+    --secondary--color:rgb(61, 137, 172);
+    --font-color-primary:#000;
+    --font-color-secondary:#fff;
+  }
+  
+  header {
+    padding: 1em;
+    background-color: var(--primary--color);
+
+    overflow: hidden;
+  }
+  header h1{
+    color: var(--font-color-secondary);
     text-align: center;
-    text-transform: capitalize;
+  }
+/*  main {
+  padding: 1rem;
+}*/
+header>a>img {
+  width: 8rem;
+  height: 8rem;
+  float: left;
 }
-#image{
-    width: 15rem;
-    float: right;
+section > div > img{
+    width: 10rem;
+    height: 10rem; 
+}
+section > div{
+  padding-left: 20rem;
+  padding-right: 20rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+body > main > nav > ol{
+  display: inline-block;
+}
+body > main > nav > ol > li{
+  display: inline;
+  padding: 5rem;
+}
+nav {
+  background-color: var(--secondary--color);
+}
+section > h2 {
+  margin-top: 2rem;
+  padding-left: 2rem;
+  background-color: var(--secondary--color);
+  color:var(--font-color-secondary);
+  padding: 0.7rem;
+  line-height: 3.5rem;
+}
+figure{
+  width: 100px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+}
+figure>img{
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 2rem;
+}
+section > p {
+  border: #000 solid 3px;
+  margin-top: 1em;
+  padding: 2em;
+}
+footer {
+  margin-top: 10rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+footer {
+  color: var(--font-color-primary);
+  font-weight: bold;
+}
+footer > p > a {
+  color: var(--font-color-primary);
 }
