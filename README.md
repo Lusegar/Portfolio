@@ -1,2 +1,2 @@
 # Portfolio
-[LInk here](https://lusegar.github.io/)
+[LInk here](https://lusegar.github.io/portfolio/index.html)
